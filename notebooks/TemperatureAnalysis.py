@@ -49,11 +49,16 @@ def main(master_node_url,year_month, input_file, output_file):
 
     save_results(avg_temperature_df, output_file)
 
+    # this infinte while loop when u want to see spark context for viewing DAG
+    # while True:
+    #     pass
+    stopSparkSession(spark)
+def stopSparkSession(spark):
     spark.stop()
 
 if __name__ == "__main__":
     if len(sys.argv) != 4:
-        print("Usage: python mtemp.py <year_month> <input_file> <output_file>")
+        print("Usage: python TemperatureAnalysis.py <year_month> <input_file> <output_file>\n Ex: /spark/bin/spark-submit TemperatureAnalysis.py /data/2024.csv /data/out")
         sys.exit(-1)
 
     year_month, input_file, output_file = sys.argv[1:4]
