@@ -58,7 +58,7 @@ def stopSparkSession(spark):
 
 if __name__ == "__main__":
     if len(sys.argv) != 4:
-        print("Usage: python TemperatureAnalysis.py <year_month> <input_file> <output_file>\n Ex: /spark/bin/spark-submit TemperatureAnalysis.py /data/2024.csv /data/out")
+        print("Usage: python TemperatureAnalysis.py <year_month> <input_file> <output_file>\n Ex: /spark/bin/spark-submit TemperatureAnalysis.py 202402 /data/input/2024.csv /data/out")
         sys.exit(-1)
 
     year_month, input_file, output_file = sys.argv[1:4]
