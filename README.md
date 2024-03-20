@@ -60,7 +60,7 @@ This Docker Compose configuration allows you to easily deploy an Apache Spark cl
 3. **Submit the Spark Job**
    - Run your Spark application using `spark-submit`:
      ```bash
-     /spark/bin/spark-submit TemperatureAnalysis.py /data/2024.csv /data/out
+     /spark/bin/spark-submit TemperatureAnalysis.py 202402 /data/input/2024.csv /data/output
      ```
    - Replace `TemperatureAnalysis.py` with your actual Python script name, if different.
    - `/data/2024.csv` is the input CSV file path inside the container.
