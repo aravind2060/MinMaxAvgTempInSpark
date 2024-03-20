@@ -74,6 +74,10 @@ This Docker Compose configuration allows you to easily deploy an Apache Spark cl
 - The output of the analysis will be saved in the specified output directory (`/data/out` in this case).
   ![image](https://github.com/aravind2060/MinMaxAvgTempInSpark/assets/38257404/243d2cb4-a555-4a4d-8365-ee22b5926ddf)
 
+## DAG using spark context
+- [http://127.0.0.1:4040/](http://127.0.0.1:4040/)
+![image](https://github.com/aravind2060/MinMaxAvgTempInSpark/assets/38257404/93b633c7-c8b1-4ba9-ac20-ad89544ffe01)
+
 
 ## Notes
 
